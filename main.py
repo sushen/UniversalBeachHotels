@@ -69,8 +69,6 @@ class Main:
                         price = internal_double_room_element[i].text
                         internal_double_room_prices.append(price)
 
-                        input("Stop .. :")
-
                     data = {'Price': internal_double_room_prices}
                     df = pd.DataFrame(data)
 
