@@ -1,3 +1,4 @@
+import os
 import time
 import pandas as pd
 from selenium.webdriver.common.by import By
@@ -73,7 +74,8 @@ class Main:
                     df = pd.DataFrame(data)
 
                     # Specify the file path where you want to save the Excel file
-                    file_path = 'room_prices.xlsx'
+                    home_directory = os.path.expanduser("~")
+                    file_path = os.path.join(home_directory, 'room_prices.xlsx')
 
                     # Save the DataFrame to an Excel file
                     df.to_excel(file_path, index=False)
