@@ -1,4 +1,4 @@
-# UniversalBeachHotels
+# Universal Beach Hotels
 
 install requirements.txt
 
